@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityChef">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="313dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/title_home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+    <Button
+        android:id="@+id/addADishButton"
+        android:layout_width="554dp"
+        android:layout_height="293dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/navigation"
+        android:background="@drawable/dish3"
+        android:text="Add a dish"
+        android:onClick="sendMessage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/dishesButton"
+        android:layout_width="543dp"
+        android:layout_height="298dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/navigation"
+        android:background="@drawable/dishes"
+        android:text="Dishes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold" />
+
+</RelativeLayout>
